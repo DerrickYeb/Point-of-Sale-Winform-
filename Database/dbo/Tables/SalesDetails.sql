@@ -1,0 +1,9 @@
+﻿CREATE TABLE [dbo].[SalesDetails]
+(
+	[Id] INT NOT NULL PRIMARY KEY IDENTITY(1,1), 
+	[SalesID] NVARCHAR(50) NOT NULL, 
+	[ProductID] NVARCHAR(50) NOT NULL,
+	[Quantity] INT NOT NULL DEFAULT 1,
+	[Price] MONEY NOT NULL,
+	[Discount] MONEY NOT NULL
+)

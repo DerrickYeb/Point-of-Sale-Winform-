@@ -1,0 +1,11 @@
+﻿CREATE TABLE [dbo].[Expenses]
+(
+	[Id] INT NOT NULL PRIMARY KEY IDENTITY,
+	[Date] DATE  NOT NULL ,
+	[Reference] NVARCHAR(MAX) NOT NULL,
+	[Amount] MONEY NOT NULL,
+	[Category] NVARCHAR(MAX) NOT NULL,
+	[Description] NVARCHAR(MAX) NOT NULL,
+	[CeatedBy] NVARCHAR(MAX) NOT NULL
+
+)
